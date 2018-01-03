@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Oli Liu">
     <title>菜单列表</title>
@@ -14,14 +15,144 @@
     <link rel="stylesheet" href="../res/js/vendor/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../res/css/public.css">
+    <style>
+        .table{
+            margin-bottom:0;
+        }
+        .table .table{
+            background-color: transparent;
+        }
+        .table .sub-table{
+            padding:0;
+        }
+        .table .sub-table th{
+            border-bottom: 0;
+            font-weight: normal;
+        }
+        .table .sub-table tbody{
+            /*display: none;*/
+        }
+        .open-icon{
+            font-size: 18px;
+        }
+        .tree-icon{
+            position: relative;
+        }
+        .tree-icon:before{
+            border-left: 1px #333 dotted;
+            position: absolute;
+            top: 8px;
+            left: 14px;
+            content: '';
+            display: inline-block;
+            height: 20px;
+        }
+        .tree-icon:after{
+            border-top: 1px #333 dotted;
+            position: absolute;
+            top: 16px;
+            left: 15px;
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 0px;
+        }
+    </style>
 
 </head>
 <body>
 <div id="app-page">
     <div class="container-fluid">
         <h1 class="page-header">菜单列表</h1>
+        <div id="container">
+            <table class="table">
+                <caption><a href="#" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>增加新菜单</a></caption>
+                <thead>
+                <tr>
+                    <th width="5%">#</th>
+                    <th>菜单名称</th>
+                    <th>控制器名称</th>
+                    <th>显示状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td colspan="5" class="sub-table">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th width="5%"><span class="fa fa-plus-circle open-icon"></span></th>
+                                <th>1</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td width="5%"><span class="tree-icon"></span></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><span class="tree-icon"></span></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="sub-table">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th width="5%"><span class="fa fa-minus-circle open-icon"></span></th>
+                                <th>F</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td width="5%"><span class="tree-icon"></span></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><span class="tree-icon"></span></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <!-- /.container-fluid -->
 </div>
+
+<script src="../res/js/require.js"></script>
+<script>
+    requirejs(['../res/js/config.js'], function () {
+        requirejs(['sbAdmin2'], function () {
+
+        });
+    });
+
+</script>
 </body>
 </html>
