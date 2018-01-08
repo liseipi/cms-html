@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Oli Liu">
+    <title>菜单列表</title>
+
+    <link rel="stylesheet" href="../res/js/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/sb-admin2/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/morrisjs/morris.css">
+    <link rel="stylesheet" href="../res/js/vendor/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../res/css/public.css">
+
+</head>
+<body>
+<div id="app-page">
+    <div class="container-fluid">
+        <h1 class="page-header">增加菜单项</h1>
+        <div id="container">
+            <form action="">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <td class="text-right">选择列：</td>
+                        <td>
+                            <select class="form-control">
+                                <option value="0">根级菜单</option>
+                                <option value="0">导航菜单管理</option>
+                                <option value="1">&nbsp;&nbsp;├菜单列表</option>
+                                <option value="2">&nbsp;&nbsp;├增加菜单</option>
+                                <option value="0">文章栏目管理</option>
+                                <option value="3">&nbsp;&nbsp;├文章列表</option>
+                                <option value="4">&nbsp;&nbsp;├增加文章</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">菜单名称：</td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">控制器名称：</td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">显示状态：</td>
+                        <td>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1">显示
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">隐藏
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../res/js/require.js"></script>
+<script>
+    requirejs(['../res/js/config.js'], function () {
+        requirejs(['sbAdmin2'], function () {
+
+        });
+    });
+
+</script>
+</body>
+</html>
