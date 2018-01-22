@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Oli Liu">
+    <title>增加商品</title>
+
+    <link rel="stylesheet" href="../res/js/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/sb-admin2/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/morrisjs/morris.css">
+    <link rel="stylesheet" href="../res/js/vendor/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../res/css/public.css">
+
+</head>
+<body>
+<div id="app-page">
+    <div class="container-fluid">
+        <h1 class="page-header">增加商品</h1>
+        <div id="container">
+            <form class="form-horizontal" action="">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <td class="text-right" width="20%"><label class="control-label">商品分类：</label></td>
+                        <td>
+                            <select class="form-control">
+                                <option value="0">选择分类</option>
+                                <option value="0">数码手机</option>
+                                <option value="0">移动电脑</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label class="control-label">SKU：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">商品名称：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right"><label class="control-label">关键字：</label></td>
+                        <td>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">上线状态：</label></td>
+                        <td>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1">上线
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">下线
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">排序：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label class="control-label">商品描述：</label></td>
+                        <td>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label class="control-label">详细内容：</label></td>
+                        <td>
+                            <textarea class="form-control" rows="3" name="article_con"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="button" class="btn btn-primary">提交</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../res/js/require.js"></script>
+<script>
+    requirejs(['../res/js/config.js'], function () {
+        requirejs(['sbAdmin2', 'ckedit'], function () {
+            CKEDITOR.replace( 'article_con' );
+        });
+    });
+
+</script>
+</body>
+</html>
