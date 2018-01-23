@@ -1,9 +1,17 @@
 body{
     background-color: #fff;
 }
-.app-page{
 
+.cms-clearfix:before,.cms-clearfix:after {
+    content: "";
+    display: table
 }
+.cms-clearfix:after {
+    clear: both
+}
+.cms-clearfix {*zoom:1}
+
+.app-page{}
 h1.page-header{
     margin: 15px 0 20px;
     font-size: 20px;

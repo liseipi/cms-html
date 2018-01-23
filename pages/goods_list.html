@@ -65,6 +65,19 @@
             width: 10px;
             height: 0px;
         }
+        .goods-img img{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ddd;
+        }
+        .goods-info{
+            padding: 5px 10px;
+        }
+        .goods-info p{
+            line-height: 20px;
+            margin: 0;
+            color: red;
+        }
     </style>
 
 </head>
@@ -107,7 +120,6 @@
                 <thead>
                 <tr>
                     <th>选择</th>
-                    <th class="sorting_asc">ID</th>
                     <th class="sorting">排序</th>
                     <th width="40%">新闻标题</th>
                     <th class="sorting_desc">分类</th>
@@ -118,24 +130,48 @@
                 <tbody>
                 <tr>
                     <td><input type="checkbox"></td>
-                    <td>1</td>
                     <td>10</td>
-                    <td>金正恩昨夜向日本发射导弹</td>
-                    <td>国际新闻</td>
-                    <td>显示</td>
+                    <td>
+                        <div class="cms-clearfix">
+                            <div class="pull-left goods-img">
+                                <img src="../images/goods/phone1.jpg" alt="">
+                            </div>
+                            <div class="pull-left goods-info">
+                                <p>PID：34546456</p>
+                                <p>SKU：24354656</p>
+                                <p>价格：128</p>
+                                <p>库存：100</p>
+                            </div>
+                        </div>
+                        <div>Apple iPhone 6s Plus (A1699) 32G 银色 移动联通电信4G手机</div>
+                    </td>
+                    <td>数码手机</td>
+                    <td>上线</td>
                     <td><a href="#"><span class="fa fa-edit"></span>编辑</a> | <a href="#"><span
                             class="fa fa-times"></span>删除</a></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>2</td>
-                    <td>11</td>
-                    <td>王思聪逛夜店被抓</td>
-                    <td>国内新闻</td>
-                    <td>隐藏</td>
-                    <td><a href="#"><span class="fa fa-edit"></span>编辑</a> | <a href="#"><span
-                            class="fa fa-times"></span>删除</a></td>
-                </tr>
+                        <td><input type="checkbox"></td>
+                        <td>11</td>
+                        <td>
+                            <div class="cms-clearfix">
+                                <div class="pull-left goods-img">
+                                    <img src="../images/goods/pc1.jpg" alt="">
+                                </div>
+                                <div class="pull-left goods-info">
+                                    <p>PID：34546456</p>
+                                    <p>SKU：24354656</p>
+                                    <p>价格：128</p>
+                                    <p>库存：100</p>
+                                </div>
+                            </div>
+                            <div>Apple iPhone 6s Plus (A1699) 32G 银色 移动联通电信4G手机</div>
+                        </td>
+                        <td>数码手机</td>
+                        <td>上线</td>
+                        <td><a href="#"><span class="fa fa-edit"></span>编辑</a> | <a href="#"><span
+                                class="fa fa-times"></span>删除</a></td>
+                    </tr>
                 </tbody>
             </table>
             <div class="row">
