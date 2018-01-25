@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Oli Liu">
-    <title>菜单列表</title>
+    <title>增加品牌</title>
 
     <link rel="stylesheet" href="../res/js/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../res/js/vendor/sb-admin2/css/sb-admin-2.min.css">
@@ -19,12 +19,13 @@
 <body>
 <div id="app-page">
     <div class="container-fluid">
-        <h1 class="page-header">增加菜单项</h1>
+        <h1 class="page-header">增加品牌</h1>
         <div id="container">
             <form class="form-horizontal" action="">
                 <table class="table table-bordered table-hover">
                     <tr>
-                        <td class="text-right" width="20%"><label class="control-label">选择列：</label></td>
+                        <td class="text-right"
+                            width="20%"><label class="control-label">选择分类：</label></td>
                         <td class="form-inline">
                             <select class="form-control">
                                 <option value="0">根级菜单</option>
@@ -38,21 +39,21 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-right"><label class="control-label">菜单名称：</label></td>
+                        <td class="text-right"><label class="control-label">品牌名称：</label></td>
                         <td><input type="text" class="form-control" name=""></td>
                     </tr>
                     <tr>
-                        <td align="right"><label class="control-label">控制器名称：</label></td>
-                        <td><input type="text" class="form-control" name=""></td>
+                        <td align="right"><label class="control-label">上传LOGO图片：</label></td>
+                        <td><input type="file"></td>
                     </tr>
                     <tr>
-                        <td class="text-right"><label class="control-label">显示状态：</label></td>
+                        <td class="text-right"><label class="control-label">状态：</label></td>
                         <td>
                             <label class="radio-inline">
-                                <input type="radio" name="state" value="option1">显示
+                                <input type="radio" name="state" value="option1">上线
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="state" value="option1" checked="">隐藏
+                                <input type="radio" name="state" value="option1" checked="">下线
                             </label>
                         </td>
                     </tr>
