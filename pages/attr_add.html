@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Oli Liu">
+    <title>增加属性</title>
+
+    <link rel="stylesheet" href="../res/js/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/sb-admin2/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/morrisjs/morris.css">
+    <link rel="stylesheet" href="../res/js/vendor/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../res/css/public.css">
+
+</head>
+<body>
+<div id="app-page">
+    <div class="container-fluid">
+        <h1 class="page-header">增加属性</h1>
+        <div id="container">
+            <form class="form-horizontal" action="">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <td class="text-right" width="20%"><label class="control-label">选择品牌：</label></td>
+                        <td class="form-inline">
+                            <select class="form-control">
+                                <option value="0">SONY</option>
+                                <option value="1">花花公子</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right" width="20%"><label class="control-label">选择分类：</label></td>
+                        <td class="form-inline">
+                            <select class="form-control">
+                                <option value="0">根级菜单</option>
+                                <option value="0">导航菜单管理</option>
+                                <option value="1">&nbsp;&nbsp;├菜单列表</option>
+                                <option value="2">&nbsp;&nbsp;├增加菜单</option>
+                                <option value="0">文章栏目管理</option>
+                                <option value="3">&nbsp;&nbsp;├文章列表</option>
+                                <option value="4">&nbsp;&nbsp;├增加文章</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label class="control-label">属性名称：</label></td>
+                        <td class="form-inline"><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">属性是否可选：</label></td>
+                        <td>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1">唯一属性
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">单选属性
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">复选属性
+                            </label>
+                            <p style="line-height: 30px; color: red;">(单选/复选，可以对商品属性设置多个值，同时对不同属性值指定不同的商品价格)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">该属性值的录入方式：</label></td>
+                        <td>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1">手工录入
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">列表中选择
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">多行文本框
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label class="control-label">可选列表值：</label></td>
+                        <td>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="button" class="btn btn-primary btn-lg">提交
+                        </button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../res/js/require.js"></script>
+<script>
+    requirejs(['../res/js/config.js'], function () {
+        requirejs(['sbAdmin2'], function () {
+
+        });
+    });
+
+</script>
+</body>
+</html>

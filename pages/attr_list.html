@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Oli Liu">
-    <title>品牌列表</title>
+    <title>属性列表</title>
 
     <link rel="stylesheet" href="../res/js/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../res/js/vendor/metisMenu/metisMenu.min.css">
@@ -26,26 +26,32 @@
 <body>
 <div id="app-page">
     <div class="container-fluid">
-        <h1 class="page-header">品牌列表</h1>
+        <h1 class="page-header">属性列表</h1>
         <div id="container">
             <table class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline">
                 <caption>
                     <div class="row">
                         <div class="col-sm-4">
                             <a href="#" class="btn btn-default"><span
-                                    class="glyphicon glyphicon-plus"></span>增加品牌</a>
+                                    class="glyphicon glyphicon-plus"></span>增加属性</a>
                         </div>
                         <div class="col-sm-8">
                             <form action="" class="form-inline">
                                 <div class="form-group">
                                     <p class="form-control-static">搜索：</p>
                                 </div>
-                                <!--<div class="form-group">-->
-                                    <!--<select class="form-control">-->
-                                        <!--<option>数码产码</option>-->
-                                        <!--<option>体育用品</option>-->
-                                    <!--</select>-->
-                                <!--</div>-->
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>SONY</option>
+                                        <option>花花公子</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>数码产码</option>
+                                        <option>体育用品</option>
+                                    </select>
+                                </div>
                                 <div class="form-group">
                                     <input type="text" name="key" class="form-control" placeholder="关键字">
                                 </div>
@@ -60,38 +66,36 @@
                 </caption>
                 <thead>
                 <tr>
-                    <th>选择</th>
                     <th class="sorting_asc">ID</th>
-                    <th class="sorting">LOGO</th>
-                    <th width="20%">品牌名称</th>
-                    <th>商品数量</th>
-                    <!--<th class="sorting_desc">分类</th>-->
-                    <th>状态</th>
+                    <th class="sorting">品牌</th>
+                    <th class="sorting_desc">分类</th>
+                    <th width="20%">属性名称</th>
+                    <th>唯一性</th>
+                    <th>录入方式</th>
+                    <th>可选值</th>
                     <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td><input type="checkbox"></td>
                     <td>1</td>
-                    <td class="brandlogo"><img src="../images/brandLogo/sony.jpg" alt=""></td>
                     <td>SONY</td>
-                    <td>321</td>
-                    <!--<td>数码电子</td>-->
-                    <td>上线</td>
-                    <td><a href="#"><span class="fa fa-edit"></span>编辑</a> | <a href="#"><span
-                            class="fa fa-times"></span>删除</a></td>
+                    <td>移动手机</td>
+                    <td>尺寸</td>
+                    <td>唯一属性</td>
+                    <td>手工录入</td>
+                    <td></td>
+                    <td><a href="#"><span class="fa fa-edit"></span>编辑</a> | <a href="#"><span class="fa fa-times"></span>删除</a></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>2</td>
-                    <td class="brandlogo"><img src="../images/brandLogo/playboy.jpg" alt=""></td>
-                    <td>花花公子</td>
-                    <td>128</td>
-                    <!--<td>服饰服装</td>-->
-                    <td>下线</td>
-                    <td><a href="#"><span class="fa fa-edit"></span>编辑</a> | <a href="#"><span
-                            class="fa fa-times"></span>删除</a></td>
+                    <td>1</td>
+                    <td>SONY</td>
+                    <td>移动手机</td>
+                    <td>网络</td>
+                    <td>复选属性</td>
+                    <td>列表中选择</td>
+                    <td>全网通，称动4G，联通4G，电信4G</td>
+                    <td><a href="#"><span class="fa fa-edit"></span>编辑</a> | <a href="#"><span class="fa fa-times"></span>删除</a></td>
                 </tr>
                 </tbody>
             </table>
