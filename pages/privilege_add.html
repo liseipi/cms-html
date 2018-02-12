@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Oli Liu">
+    <title>增加管理员</title>
+
+    <link rel="stylesheet" href="../res/js/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/sb-admin2/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/morrisjs/morris.css">
+    <link rel="stylesheet" href="../res/js/vendor/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../res/css/public.css">
+
+</head>
+<body>
+<div id="app-page">
+    <div class="container-fluid">
+        <h1 class="page-header">增加管理员</h1>
+        <div id="container">
+            <form class="form-horizontal" action="">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <td class="text-right"><label class="control-label">用户名：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">手机：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">Email：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">密码：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">重复密码：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right" width="20%"><label class="control-label">角色选择：</label></td>
+                        <td class="form-inline">
+                            <select class="form-control">
+                                <option value="0">根级菜单</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">性别：</label></td>
+                        <td>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1">男
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">女
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">生日：</label></td>
+                        <td class="form-inline">
+                            <select class="form-control">
+                                <option value="0">1990</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="0">12</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="0">12</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="button" class="btn btn-primary btn-lg">提交
+                        </button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../res/js/require.js"></script>
+<script>
+    requirejs(['../res/js/config.js'], function () {
+        requirejs(['sbAdmin2'], function () {
+
+        });
+    });
+
+</script>
+</body>
+</html>

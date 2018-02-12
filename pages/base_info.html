@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Oli Liu">
+    <title>基本信息</title>
+
+    <link rel="stylesheet" href="../res/js/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/sb-admin2/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="../res/js/vendor/morrisjs/morris.css">
+    <link rel="stylesheet" href="../res/js/vendor/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../res/css/public.css">
+
+</head>
+<body>
+<div id="app-page">
+    <div class="container-fluid">
+        <h1 class="page-header">基本信息</h1>
+        <div id="container">
+            <form class="form-horizontal" action="">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <td class="text-right">
+                            <label class="control-label checkbox-inline">
+                                <input type="checkbox" name="state" value="option1">图片加水印
+                            </label>
+                        </td>
+                        <td class="form-inline">
+                            水印文字：<input type="text" class="form-control" placeholder="">
+                            <hr>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1">上
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">右
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">下
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">左
+                            </label>
+                            <hr>
+                            透明度：<input type="text" class="form-control" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">用户评论是否需要审核：</label></td>
+                        <td class="form-inline">
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1">不需要审核
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="state" value="option1" checked="">需要审核
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">最大图片宽度比：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-right"><label class="control-label">最大图片高度比：</label></td>
+                        <td><input type="text" class="form-control" name=""></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="button" class="btn btn-primary btn-lg">提交
+                        </button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../res/js/require.js"></script>
+<script>
+    requirejs(['../res/js/config.js'], function () {
+        requirejs(['sbAdmin2'], function () {
+
+        });
+    });
+
+</script>
+</body>
+</html>
